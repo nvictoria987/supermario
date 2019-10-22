@@ -12,12 +12,16 @@ def run_game():
 
     #make mario
     mario=Mario(ai_settings,screen)
-    screen.fill(ai_settings.bg_color)
+
     while True:
+        mario.blitme()
         gf.check_events(ai_settings=ai_settings, screen=screen, mario=mario)
-        screen.fill(ai_settings.bg_color)
-        if ai_settings.game_active:
-            mario.update()
+        gf.update_screen(ai_settings=ai_settings, screen=screen, mario=mario)
+
+        # if ai_settings.game_active:
+        #     mario.update()
+        # gf.update_screen(ai_settings=ai_settings, screen=screen)
+
 
 
 
