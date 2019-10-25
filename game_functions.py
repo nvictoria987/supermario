@@ -44,12 +44,14 @@ def check_events(ai_settings, screen, mario, start_button, sc):
             mouse_x, mouse_y = pygame.mouse.get_pos()
             check_start_button(ai_settings,screen, start_button, mouse_x, mouse_y)
 
-def update_screen(ai_settings, screen,mario, sc):
+def update_screen(ai_settings, screen, mario, sc, bg):
     """Update images on the screen, and flip to the new screen."""
         # Redraw the screen, each pass through the loop.
     screen.fill(ai_settings.bg_color)
+    bg.blitme()
     mario.blitme()
     mario.update()
+    bg.update(mario)
 
 
     if not ai_settings.game_active:
