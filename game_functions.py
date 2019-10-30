@@ -2,7 +2,6 @@ import sys
 from timer import Timer
 import pygame
 
-
 def check_keydown_events(event, ai_settings, screen, mario):
     """Respond to keypresses."""
     if event.key == pygame.K_RIGHT:
@@ -56,10 +55,6 @@ def update_screen(ai_settings, screen, mario, sc, bg):
 
     if not ai_settings.game_active:
         sc.start()
-
-
-
-
 
         # Make the most recently drawn screen visible.
     pygame.display.flip()

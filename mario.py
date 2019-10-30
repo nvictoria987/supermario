@@ -113,5 +113,3 @@ class Mario(Sprite):
 
         self.image = walk_frames[self.index]
         self.image = pygame.transform.scale(self.image, (40, 40))
-
-

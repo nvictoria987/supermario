@@ -1,6 +1,5 @@
 import pygame
 
-
 class Button():
     def __init__(self, ai_settings, screen):
         self.ai_settings = ai_settings

@@ -7,9 +7,6 @@ class Startscreen():
         self.start_button = start_button
         self.bg_color=(0, 0, 200)
 
-
-
-
     def start(self):
         self.screen.fill(self.bg_color)
         self.start_button.draw_button()
